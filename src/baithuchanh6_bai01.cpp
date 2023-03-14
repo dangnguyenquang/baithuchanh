@@ -1,57 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int *input(int n){
-    int arr[100];
-    for (int i = 0; i < n; i++){
-        cout << "Nhap phan tu arr[" << i << "] :"; cin >> arr[i];
-    }
-    return arr;
-}
-
-void output(int *arr, int n){
-    for (int i = 0; i < n; i++){
-        cout << "Phan tu arr[" << i << "] :" << arr[i] << endl;
-    }
-}
-
-int sum(int *arr, int n){
-    int S = 0;
-    for (int i = 0; i < n; i++){
-        S += arr[i];
-    }
-    return S;
-}
-
-void arrange(int *arr, int n){
-    int sx;
-    for (int i = 0; i < n-1; i++){
-        for (int j = i + 1; j < n; j++){
-            if (arr[i] < arr[j]){
-                sx = arr[i];
-                arr[i] = arr[j];
-                arr[j] = sx;
-            }
-        }
-    }
-    output(arr, n);
-}
-
-int countX(int *arr, int n, int x){
-    int count = 0;
-    for (int i = 0; i < n; i++){
-        if (arr[i] == x) count ++;
-    }
-    return count;
-}
-
-void evenLower20(int *arr, int n){
-    for (int i = 0; i < n; i++){
-        if ((arr[i]%2) == 0 && arr[i] < 20)
-            cout << arr[i] << " ";
-    }
-}
-
+// Chan
 void minLct(int *arr, int n){
     int min = arr[0];
     for (int i = 1; i < n; i++){
