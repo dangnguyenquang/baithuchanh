@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+<<<<<<< HEAD
 int *input(int n){
     int *arr = new int[100];
     for (int i = 0; i < n; i++){
@@ -56,6 +57,9 @@ void evenLower20(int *arr, int n){
     }
 }
 
+=======
+// Chan
+>>>>>>> 0574a8d18f4860aebae5213fc9744eda75ccb663
 void minLct(int *arr, int n){
     int min = arr[0];
     for (int i = 1; i < n; i++){
