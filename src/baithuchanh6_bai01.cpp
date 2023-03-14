@@ -2,7 +2,7 @@
 using namespace std;
 
 int *input(int n){
-    int arr[100];
+    int *arr = new int[100];
     for (int i = 0; i < n; i++){
         cout << "Nhap phan tu arr[" << i << "] :"; cin >> arr[i];
     }
@@ -21,6 +21,10 @@ int sum(int *arr, int n){
         S += arr[i];
     }
     return S;
+}
+
+void xuatphanso(phanso *x){
+    cout << x->tuSo << "/" << x->mauSo << endl;
 }
 
 void arrange(int *arr, int n){
